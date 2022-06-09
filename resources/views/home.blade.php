@@ -2,9 +2,8 @@
 
 @section('content')
     <main id="site_main">
-        <section class="jumbotron">
-            
-        </section>
+        <section class="jumbotron"></section>
+
         <section class="second-section">
             <div class="container">
                 <div class="row">
@@ -18,33 +17,50 @@
                     @endforeach
                  </div>
             </div>
-            <div class="button-ssection container flex justify">
+            <div class="button-section container flex justify">
                 <button type="submit">LOAD MORE</button>
             </div>
         </section>
+
         <section class="third-section">
-            <ul class="flex justify align-items">
-                <li>
-                    <img src="../img/digital-comics.png" alt="">
-                </li>
-                <li class="mr2">DIGITAL COMICS</li>
-                <li>
-                    <img src="../img/merchandise.png" alt=""> 
-                </li>
-                <li class="mr2">DC MERCHANDISE</li>
-                <li>
-                    <img src="../img/subscription.png" alt="">
-                </li>
-                <li class="mr2">SUBSCRIPTION</li>
-                <li>
-                    <img src="../img/shop.png" alt="">
-                </li>
-                <li class="mr2">COMIC SHOP LOCATOR</li>
-                <li>
-                    <img src="../img/power-visa.png" alt="">
-                </li>
-                <li>DC POWER VISA</li>
-            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <div>
+                            <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="" />
+                            <a href="#">digital comics</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="" />
+                            <a href="#">dc merchandise</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="" />
+                            <a href="#">subscriptions</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="" />
+                            <a href="#">comic shop locator</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <img
+                            class="h-150"
+                            src="{{asset('images/buy-dc-power-visa.svg')}}"
+                            alt=""
+                            />
+                            <a href="#">dc power visa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="fourth-section">
 
