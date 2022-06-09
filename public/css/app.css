@@ -12174,13 +12174,37 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-color: rgb(37, 120, 193);
+  background-color: rgb(231, 234, 238);
+}
+
+#site_header {
+  background-color: white;
 }
 
 #site_header nav a {
   text-decoration: none;
   color: black !important;
   text-transform: uppercase;
-  font-weight: 800;
+}
+
+#site_main .jumbotron {
+  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.comic-cover {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.comic-cover img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 

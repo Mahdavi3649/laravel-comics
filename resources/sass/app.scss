@@ -3,17 +3,18 @@
 @use 'bootstrap';
 
 body{
-    background-color: rgb(205, 213, 220);
+    background-color: rgb(231, 234, 238);
 }
 
 #site_header{
+    background-color: white;
+    
    
     nav{
         a{
             text-decoration: none;
             color: black !important;
             text-transform: uppercase;
-            font-weight: 500;
         }
     }
 
@@ -22,7 +23,7 @@ body{
 #site_main{
 
     .jumbotron{
-        background-image: url("./img/jumbotron.jpg");
+        background-image: url("../img/jumbotron.jpg");
         background-position: top;
         background-size: cover;
         background-repeat: no-repeat;
@@ -32,7 +33,6 @@ body{
     
 }
 
-.col-2{
     .comic-cover{
         padding: 10px;
         margin-bottom: 15px;
@@ -43,5 +43,4 @@ body{
             object-position: top;
 
         }
-    }
 }
