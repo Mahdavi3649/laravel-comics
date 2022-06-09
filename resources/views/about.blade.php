@@ -2,5 +2,7 @@
 
 
 @section('content')
-<h1>welcome</h1>
+
+<h1>About me</h1>
+
 @endsection
