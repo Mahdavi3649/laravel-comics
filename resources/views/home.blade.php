@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="row">
                     @foreach ($comics as $comic)
-                    <div class="col-2 comic-cover">
+                    <div class="col-2 comic-cover mt-3">
                         <div class="comics">
                             <img class="img-fluid" src="{{$comic['img']}}" alt="">
                             <h6>{{$comic['series']}}</h6>
@@ -25,23 +25,23 @@
         <section class="third-section">
             <ul class="flex justify align-items">
                 <li>
-                    <img src="./img/digital-comics.png" alt="">
+                    <img src="../img/digital-comics.png" alt="">
                 </li>
                 <li class="mr2">DIGITAL COMICS</li>
                 <li>
-                    <img src="./img/merchandise.png" alt=""> 
+                    <img src="../img/merchandise.png" alt=""> 
                 </li>
                 <li class="mr2">DC MERCHANDISE</li>
                 <li>
-                    <img src="./img/subscription.png" alt="">
+                    <img src="../img/subscription.png" alt="">
                 </li>
                 <li class="mr2">SUBSCRIPTION</li>
                 <li>
-                    <img src="./img/shop.png" alt="">
+                    <img src="../img/shop.png" alt="">
                 </li>
                 <li class="mr2">COMIC SHOP LOCATOR</li>
                 <li>
-                    <img src="./img/power-visa.png" alt="">
+                    <img src="../img/power-visa.png" alt="">
                 </li>
                 <li>DC POWER VISA</li>
             </ul>

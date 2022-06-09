@@ -12197,6 +12197,16 @@ body {
   height: 400px;
 }
 
+#site_main .second-section {
+  background-color: #1C1C1C;
+}
+
+#site_main .second-section h6 {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 .comic-cover {
   padding: 10px;
   margin-bottom: 15px;
