@@ -12,7 +12,7 @@
                     <div class="col-2 comic-cover">
                         <div class="comics">
                             <img class="img-fluid" src="{{$comic['img']}}" alt="">
-                            <h5>{{$comic['series']}}</h5>
+                            <h6>{{$comic['series']}}</h6>
                         </div>
                     </div>
                     @endforeach

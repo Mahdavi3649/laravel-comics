@@ -12185,6 +12185,8 @@ body {
   text-decoration: none;
   color: black !important;
   text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
 }
 
 #site_main .jumbotron {
@@ -12206,5 +12208,6 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  aspect-ratio: 1.1;
 }
 
