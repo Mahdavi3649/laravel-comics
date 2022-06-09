@@ -12174,6 +12174,13 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(37, 120, 193);
+}
+
+#site_header nav a {
+  text-decoration: none;
+  color: black !important;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 

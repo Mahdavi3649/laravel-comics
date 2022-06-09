@@ -1,18 +1,53 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends ('layouts/app')
 
-        <title>Laravel</title>
+@section('content')
+    <main id="site_main">
+        <section class="jumbotron">
+            
+        </section>
+        <section class="second-section">
+            <div class="container">
+                <div class="row">
+                    @foreach ($comics as $comic)
+                    <div class="col-2 comic-cover">
+                        <div class="comics">
+                            <img class="img-fluid" src="{{$comic['img']}}" alt="">
+                            <h5>{{$comic['series']}}</h5>
+                        </div>
+                    </div>
+                    @endforeach
+                 </div>
+            </div>
+            <div class="button-ssection container flex justify">
+                <button type="submit">LOAD MORE</button>
+            </div>
+        </section>
+        <section class="third-section">
+            <ul class="flex justify align-items">
+                <li>
+                    <img src="./img/digital-comics.png" alt="">
+                </li>
+                <li class="mr2">DIGITAL COMICS</li>
+                <li>
+                    <img src="./img/merchandise.png" alt=""> 
+                </li>
+                <li class="mr2">DC MERCHANDISE</li>
+                <li>
+                    <img src="./img/subscription.png" alt="">
+                </li>
+                <li class="mr2">SUBSCRIPTION</li>
+                <li>
+                    <img src="./img/shop.png" alt="">
+                </li>
+                <li class="mr2">COMIC SHOP LOCATOR</li>
+                <li>
+                    <img src="./img/power-visa.png" alt="">
+                </li>
+                <li>DC POWER VISA</li>
+            </ul>
+        </section>
+        <section class="fourth-section">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-        
-    </head>
-    <body>
-        <h1>{{$msg}}</h1>
-    </body>
-</html>
+        </section>
+    </main>    
+@endsection

@@ -3,5 +3,45 @@
 @use 'bootstrap';
 
 body{
-    background-color: aliceblue;
+    background-color: rgb(205, 213, 220);
+}
+
+#site_header{
+   
+    nav{
+        a{
+            text-decoration: none;
+            color: black !important;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+
+}
+
+#site_main{
+
+    .jumbotron{
+        background-image: url("./img/jumbotron.jpg");
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    
+}
+
+.col-2{
+    .comic-cover{
+        padding: 10px;
+        margin-bottom: 15px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+
+        }
+    }
 }
