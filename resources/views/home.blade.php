@@ -13,7 +13,7 @@
                     @foreach ($comics as $comic)
                     <div class="col-2 comic-cover mt-1">
                         <div class="comics">
-                            <img class="img-fluid" src="{{$comic['img']}}" alt="">
+                            <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
                             <h6>{{$comic['series']}}</h6>
                         </div>
                     </div>
@@ -33,25 +33,25 @@
                     <div class="col-2">
                         <div>
                             <img src="{{asset('img/buy-comics-digital-comics.png')}}" alt="" />
-                            <a href="#">digital comics</a>
+                            <span>digital comics</span>
                         </div>
                     </div>
                     <div class="col-2">
                         <div>
                             <img src="{{asset('img/buy-comics-merchandise.png')}}" alt="" />
-                            <a href="#">dc merchandise</a>
+                            <span>dc merchandise</span>
                         </div>
                     </div>
                     <div class="col-2">
                         <div>
                             <img src="{{asset('img/buy-comics-subscriptions.png')}}" alt="" />
-                            <a href="#">subscriptions</a>
+                            <span>subscriptions</span>
                         </div>
                     </div>
                     <div class="col-2">
                         <div>
                             <img src="{{asset('img/buy-comics-shop-locator.png')}}" alt="" />
-                            <a href="#">comic shop locator</a>
+                            <span>comic shop locator</span>
                         </div>
                     </div>
                     <div class="col-2">
@@ -61,7 +61,7 @@
                             src="{{asset('img/buy-dc-power-visa.svg')}}"
                             alt=""
                             />
-                            <a href="#">dc power visa</a>
+                            <span>dc power visa</span>
                         </div>
                     </div>
                 </div>

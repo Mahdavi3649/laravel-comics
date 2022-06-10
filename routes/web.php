@@ -22,17 +22,36 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $comics = config('db.comics');
+    return view('comics', compact('comics'));
 })->name('comics');
+
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('db.comics');
+    //dd(count($comics));
+    //dd($id);
+
+    if($id >= 0 && is_numeric($id) && $id < count($comics)){
+        //dd($id);
+        //dd($comics[$id]);
+        $comic = ($comics[$id]);
+        return view('comics.show', compact('comic'));
+    } else {
+        abort(404);
+    }
+    
+})->name('single-comic');
+
+
+Route::get('/movies', function () {
+    return 'movies';
+})->name('movies');
 
 
 Route::get('/tv', function () {
     return 'tv';
 })->name('tv');
 
-Route::get('/movies', function () {
-    return 'movies';
-})->name('movies');
 
 Route::get('/games', function () {
     return 'games';
@@ -42,9 +61,9 @@ Route::get('/collectibiles', function () {
     return 'collectibiles';
 })->name('collectibiles');
 
-Route::get('/video', function () {
-    return 'video';
-})->name('video');
+Route::get('/videos', function () {
+    return 'videos';
+})->name('videos');
 
 Route::get('/fans', function () {
     return 'fans';
