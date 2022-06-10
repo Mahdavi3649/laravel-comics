@@ -12185,8 +12185,34 @@ body {
   text-decoration: none;
   color: black !important;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+#site_header .search {
+  width: 80%;
+  border-bottom: 2px solid #0282F9;
+  margin: 1.5rem 0;
+}
+
+#site_header .search input {
+  text-align: right;
+  border: none;
+}
+
+#site_header .search ::-moz-placeholder {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#site_header .search :-ms-input-placeholder {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#site_header .search ::placeholder {
+  font-size: 11px;
+  font-weight: 700;
 }
 
 #site_main .jumbotron {
@@ -12199,6 +12225,9 @@ body {
 
 #site_main .second-section {
   background-color: #1C1C1C;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 #site_main .second-section h6 {
@@ -12209,7 +12238,6 @@ body {
 
 .comic-cover {
   padding: 10px;
-  margin-bottom: 15px;
 }
 
 .comic-cover img {
@@ -12219,5 +12247,92 @@ body {
   -o-object-position: top;
      object-position: top;
   aspect-ratio: 1.1;
+}
+
+.series_btn {
+  position: absolute;
+  color: white;
+  padding: 0 25px;
+  background-color: #0282F9;
+  left: 100px;
+  top: -20px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.load_btn {
+  color: white;
+  padding: 0 45px;
+  background-color: #0282F9;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  left: 45%;
+}
+
+.third-section {
+  background-color: #0282F9;
+}
+
+footer .top {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+}
+
+footer .top .col-6 img {
+  width: 400px;
+}
+
+footer .top li {
+  list-style: none;
+  line-height: 20px;
+  text-align: left;
+  font-size: 13px;
+}
+
+footer .top li a {
+  text-decoration: none;
+  color: #b5adac;
+}
+
+footer .top p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+  margin: 11px 0;
+  text-align: left;
+}
+
+footer .down {
+  background-color: #303030;
+  padding: 30px;
+}
+
+footer .down h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0282F9;
+}
+
+footer .down button {
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  padding: 7px 20px;
+  font-weight: 400;
+  border: 2px solid #0282F9;
+}
+
+footer .down .col-10 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
