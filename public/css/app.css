@@ -10290,11 +10290,10 @@ body {
 #site_main .second-section a {
   text-decoration: none;
 }
-
-.comic-cover {
+#site_main .comic-cover {
   padding: 10px;
 }
-.comic-cover img {
+#site_main .comic-cover img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

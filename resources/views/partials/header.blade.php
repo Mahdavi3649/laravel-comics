@@ -6,7 +6,7 @@
                 </div>
                 <div class="col-8">
                     <nav class="nav justify-content-center">
-                        <a class="nav-link {{Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">Home</a>
+                        <a class="nav-link {{Route::currentRouteName() === 'characters' ? 'active' : '' }}" href="{{route('characters')}}">characters</a>
                         <a class="nav-link {{Route::currentRouteName() === 'comics' ? 'active' : '' }}" href="{{route('comics')}}">comics</a>
                         <a class="nav-link" href="{{route('movies')}}">movies</a>
                         <a class="nav-link" href="{{route('tv')}}">tv</a>

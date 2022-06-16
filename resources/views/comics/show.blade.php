@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container mt-5 mb-5">
+<section class="jumbotron"></section>
+
    <img class="img-fluid"  src="{{$comic['thumb']}}" alt="">
 
     <div class="row">

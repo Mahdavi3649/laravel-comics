@@ -70,18 +70,18 @@ body{
     }
 
     
-}
-
     .comic-cover{
         padding: 10px;
-
+    
         img{
             width: 100%;
             object-fit: cover;
             object-position: top;
             aspect-ratio: 1.1;
         }
+    }
 }
+
 
 .series_btn {
     position: absolute;
